@@ -1,5 +1,5 @@
 
-import { Scissors, Beard, Sparkles, Crown } from 'lucide-react';
+import { Scissors, User, Sparkles, Crown } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const Services = () => {
@@ -12,7 +12,7 @@ const Services = () => {
       features: ["Consulta de estilo", "Corte personalizado", "Finalização premium"]
     },
     {
-      icon: Beard,
+      icon: User,
       title: "Barba & Bigode",
       description: "Modelagem e cuidados especiais para barba e bigode com produtos premium.",
       price: "A partir de R$ 35",
