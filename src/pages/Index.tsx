@@ -1,24 +1,24 @@
 
-import Header from '@/components/Header';
-import Hero from '@/components/Hero';
-import Services from '@/components/Services';
-import About from '@/components/About';
-import Gallery from '@/components/Gallery';
-import Testimonials from '@/components/Testimonials';
-import Contact from '@/components/Contact';
-import Footer from '@/components/Footer';
+import ModernHeader from '@/components/modern/ModernHeader';
+import ModernHero from '@/components/modern/ModernHero';
+import ModernServices from '@/components/modern/ModernServices';
+import ModernAbout from '@/components/modern/ModernAbout';
+import ModernGallery from '@/components/modern/ModernGallery';
+import ModernTestimonials from '@/components/modern/ModernTestimonials';
+import ModernContact from '@/components/modern/ModernContact';
+import ModernFooter from '@/components/modern/ModernFooter';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-vampeta-black text-white">
-      <Header />
-      <Hero />
-      <Services />
-      <About />
-      <Gallery />
-      <Testimonials />
-      <Contact />
-      <Footer />
+    <div className="min-h-screen bg-vampeta-black text-white overflow-hidden">
+      <ModernHeader />
+      <ModernHero />
+      <ModernServices />
+      <ModernAbout />
+      <ModernGallery />
+      <ModernTestimonials />
+      <ModernContact />
+      <ModernFooter />
     </div>
   );
 };
