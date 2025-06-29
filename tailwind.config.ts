@@ -19,6 +19,15 @@ export default {
 		},
 		extend: {
 			colors: {
+				// Vampeta Brand Colors
+				vampeta: {
+					black: '#0A0A0A',
+					charcoal: '#1A1A1A',
+					darkGray: '#2A2A2A',
+					gold: '#D4AF37',
+					lightGold: '#F4E4A6',
+					cream: '#FFF8E7',
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -62,6 +71,18 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			fontFamily: {
+				'playfair': ['Playfair Display', 'serif'],
+				'inter': ['Inter', 'sans-serif'],
+			},
+			backgroundImage: {
+				'gold-gradient': 'linear-gradient(135deg, #D4AF37 0%, #F4E4A6 100%)',
+				'black-gradient': 'linear-gradient(135deg, #0A0A0A 0%, #2A2A2A 100%)',
+			},
+			boxShadow: {
+				'gold': '0 4px 20px rgba(212, 175, 55, 0.3)',
+				'gold-lg': '0 10px 40px rgba(212, 175, 55, 0.4)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
