@@ -25,6 +25,7 @@ const ModernHeader = () => {
   const menuItems = [
     { id: 'home', label: 'Início' },
     { id: 'services', label: 'Serviços' },
+    { id: 'products', label: 'Produtos' },
     { id: 'about', label: 'Sobre' },
     { id: 'gallery', label: 'Galeria' },
     { id: 'contact', label: 'Contato' }

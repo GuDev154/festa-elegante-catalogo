@@ -32,13 +32,13 @@ const ModernHero = () => {
 
   return (
     <section id="home" ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with professional image */}
+      {/* Background Image */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-vampeta-black via-vampeta-charcoal/90 to-vampeta-black z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-vampeta-black/90 via-vampeta-black/70 to-vampeta-black/90 z-10"></div>
         <img 
           src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=2070&auto=format&fit=crop"
           alt="Vampeta Barbearia - Interior Profissional"
-          className="w-full h-full object-cover opacity-30"
+          className="w-full h-full object-cover"
           loading="eager"
         />
         
@@ -49,15 +49,6 @@ const ModernHero = () => {
             background: `radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(212, 175, 55, 0.15) 0%, transparent 60%)`
           }}
         ></div>
-
-        {/* Subtle pattern overlay */}
-        <div className="absolute inset-0 opacity-10 z-30">
-          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-vampeta-gold rounded-full animate-pulse"></div>
-          <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-vampeta-gold rounded-full"></div>
-          <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-vampeta-gold rounded-full animate-pulse delay-1000"></div>
-          <div className="absolute bottom-1/3 right-1/4 w-1 h-1 bg-vampeta-gold rounded-full"></div>
-          <div className="absolute top-1/2 left-1/6 w-1 h-1 bg-vampeta-gold rounded-full animate-pulse delay-500"></div>
-        </div>
       </div>
 
       {/* Main Content */}
@@ -78,7 +69,7 @@ const ModernHero = () => {
           <span className="block text-vampeta-gold font-medium bg-gradient-to-r from-vampeta-gold to-vampeta-lightGold bg-clip-text text-transparent">BARBEARIA</span>
         </h1>
 
-        {/* Subtitle with emphasis */}
+        {/* Subtitle */}
         <div className="mb-12 space-y-4">
           <p className="text-xl md:text-2xl text-white/80 font-inter font-light max-w-3xl mx-auto leading-relaxed">
             Tradição e sofisticação em cada corte.<br />
@@ -107,15 +98,13 @@ const ModernHero = () => {
           >
             <span className="relative z-10">Agendar Horário</span>
             <div className="absolute inset-0 bg-gradient-to-r from-vampeta-lightGold to-vampeta-gold opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-100 transition-transform duration-700"></div>
           </button>
           
           <button 
-            onClick={() => scrollToSection('gallery')}
+            onClick={() => scrollToSection('products')}
             className="group relative text-vampeta-gold border-2 border-vampeta-gold/60 px-8 py-4 rounded-full font-inter font-medium text-lg transition-all duration-500 hover:bg-vampeta-gold/15 hover:border-vampeta-gold hover:scale-105 backdrop-blur-sm"
           >
-            <span className="relative z-10">Ver Portfólio</span>
-            <div className="absolute inset-0 bg-vampeta-gold/5 rounded-full scale-0 group-hover:scale-100 transition-transform duration-500"></div>
+            <span className="relative z-10">Ver Produtos</span>
           </button>
         </div>
 
