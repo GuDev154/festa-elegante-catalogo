@@ -8,6 +8,7 @@ import ModernGallery from '@/components/modern/ModernGallery';
 import ModernTestimonials from '@/components/modern/ModernTestimonials';
 import ModernContact from '@/components/modern/ModernContact';
 import ModernFooter from '@/components/modern/ModernFooter';
+import WhatsAppFloat from '@/components/WhatsAppFloat';
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
       <ModernTestimonials />
       <ModernContact />
       <ModernFooter />
+      <WhatsAppFloat />
     </div>
   );
 };

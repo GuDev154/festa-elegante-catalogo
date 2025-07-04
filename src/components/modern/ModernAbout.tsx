@@ -3,14 +3,14 @@ import { Award, Users, Clock, Shield } from 'lucide-react';
 
 const ModernAbout = () => {
   const features = [
-    { icon: Award, title: "Excelência", desc: "Padrão premium" },
-    { icon: Users, title: "Personalizado", desc: "Cada cliente único" },
-    { icon: Clock, title: "Pontualidade", desc: "Tempo respeitado" },
-    { icon: Shield, title: "Qualidade", desc: "Produtos selecionados" }
+    { icon: Award, title: "Excelência", desc: "Padrão premium em cada serviço" },
+    { icon: Users, title: "Personalizado", desc: "Atendimento único para cada cliente" },
+    { icon: Clock, title: "Pontualidade", desc: "Horários respeitados rigorosamente" },
+    { icon: Shield, title: "Qualidade", desc: "Produtos premium selecionados" }
   ];
 
   return (
-    <section id="about" className="py-32 bg-vampeta-black relative overflow-hidden">
+    <section id="about" className="py-32 bg-vampeta-charcoal relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-vampeta-gold/10 via-transparent to-transparent"></div>
@@ -57,21 +57,54 @@ const ModernAbout = () => {
             </div>
           </div>
 
-          {/* Image Section */}
+          {/* Image Gallery with Overlay */}
           <div className="relative">
-            <div className="relative rounded-3xl overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=2070&auto=format&fit=crop"
-                alt="Interior da Vampeta Barbearia"
-                className="w-full h-[600px] object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-vampeta-black/60 via-transparent to-transparent"></div>
-              
-              {/* Floating Element */}
-              <div className="absolute -bottom-8 -left-8 bg-vampeta-gold text-vampeta-black p-8 rounded-2xl">
-                <div className="text-4xl font-playfair font-light mb-2">15+</div>
-                <div className="font-inter font-light">Anos de História</div>
+            <div className="grid grid-cols-2 gap-4">
+              {/* Main Large Image */}
+              <div className="col-span-2 relative group cursor-pointer overflow-hidden rounded-2xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=2070&auto=format&fit=crop"
+                  alt="Interior principal da Vampeta Barbearia"
+                  className="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-vampeta-black/60 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-vampeta-gold/0 group-hover:bg-vampeta-gold/20 transition-all duration-500 group-hover:shadow-gold-lg"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h4 className="font-inter font-medium">Ambiente Premium</h4>
+                  <p className="text-sm text-white/70">Conforto e elegância</p>
+                </div>
               </div>
+
+              {/* Two smaller images */}
+              <div className="relative group cursor-pointer overflow-hidden rounded-xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=2070&auto=format&fit=crop"
+                  alt="Área de corte profissional"
+                  className="w-full h-[200px] object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-vampeta-gold/0 group-hover:bg-vampeta-gold/20 transition-all duration-500 group-hover:shadow-gold"></div>
+                <div className="absolute bottom-2 left-2 text-white">
+                  <p className="text-xs font-inter font-medium">Estação de Corte</p>
+                </div>
+              </div>
+
+              <div className="relative group cursor-pointer overflow-hidden rounded-xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=2070&auto=format&fit=crop"
+                  alt="Área de barba e tratamentos"
+                  className="w-full h-[200px] object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-vampeta-gold/0 group-hover:bg-vampeta-gold/20 transition-all duration-500 group-hover:shadow-gold"></div>
+                <div className="absolute bottom-2 left-2 text-white">
+                  <p className="text-xs font-inter font-medium">Área Premium</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Floating Stats */}
+            <div className="absolute -bottom-8 -left-8 bg-vampeta-gold text-vampeta-black p-8 rounded-2xl shadow-gold-lg">
+              <div className="text-4xl font-playfair font-light mb-2">15+</div>
+              <div className="font-inter font-light">Anos de História</div>
             </div>
 
             {/* Decorative Elements */}
